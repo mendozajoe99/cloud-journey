@@ -6,3 +6,7 @@
 **Storage account:** mystorage9846
 **Container:** mycontainer
 **Blob:** testfile.txt
+
+**Storage:** mystorage9846
+**Container:** mycontainer
+**Blob:** testfile.txt
