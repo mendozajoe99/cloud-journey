@@ -1,0 +1,7 @@
+=== Blobs in mycontainer for mendozastoragejoe0522 ===
+Name                  Blob Type    Blob Tier    Length    Content Type    Last Modified              Snapshot
+--------------------  -----------  -----------  --------  --------------  -------------------------  ----------
+hello_1755200547.txt  BlockBlob    Hot          59        text/plain      2025-08-14T19:42:27+00:00
+Newest blob: hello_1755200547.txt
+=== Downloaded file contents ===
+Hello from Mendoza Day 5 @ Thu Aug 14 12:42:27 PM PDT 2025
