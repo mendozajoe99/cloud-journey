@@ -1,0 +1,201 @@
+[19:10:12] Checking Azure CLI login
+[19:10:12] Creating or verifying resource group: StorageRG in eastus2
+{
+  "id": "/subscriptions/6e25851e-ea5d-4763-94a3-fbd2714a8fec/resourceGroups/StorageRG",
+  "location": "eastus2",
+  "managedBy": null,
+  "name": "StorageRG",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+[19:10:16] Creating storage account: mendozastg03416 (Standard_GRS)
+{
+  "accessTier": "Hot",
+  "accountMigrationInProgress": null,
+  "allowBlobPublicAccess": false,
+  "allowCrossTenantReplication": false,
+  "allowSharedKeyAccess": null,
+  "allowedCopyScope": null,
+  "azureFilesIdentityBasedAuthentication": null,
+  "blobRestoreStatus": null,
+  "creationTime": "2025-08-21T19:10:19.206080+00:00",
+  "customDomain": null,
+  "defaultToOAuthAuthentication": null,
+  "dnsEndpointType": null,
+  "enableExtendedGroups": null,
+  "enableHttpsTrafficOnly": true,
+  "enableNfsV3": null,
+  "encryption": {
+    "encryptionIdentity": null,
+    "keySource": "Microsoft.Storage",
+    "keyVaultProperties": null,
+    "requireInfrastructureEncryption": null,
+    "services": {
+      "blob": {
+        "enabled": true,
+        "keyType": "Account",
+        "lastEnabledTime": "2025-08-21T19:10:19.393526+00:00"
+      },
+      "file": {
+        "enabled": true,
+        "keyType": "Account",
+        "lastEnabledTime": "2025-08-21T19:10:19.393526+00:00"
+      },
+      "queue": null,
+      "table": null
+    }
+  },
+  "extendedLocation": null,
+  "failoverInProgress": null,
+  "geoReplicationStats": null,
+  "id": "/subscriptions/6e25851e-ea5d-4763-94a3-fbd2714a8fec/resourceGroups/StorageRG/providers/Microsoft.Storage/storageAccounts/mendozastg03416",
+  "identity": null,
+  "immutableStorageWithVersioning": null,
+  "isHnsEnabled": null,
+  "isLocalUserEnabled": null,
+  "isSftpEnabled": null,
+  "isSkuConversionBlocked": null,
+  "keyCreationTime": {
+    "key1": "2025-08-21T19:10:19.377898+00:00",
+    "key2": "2025-08-21T19:10:19.377898+00:00"
+  },
+  "keyPolicy": null,
+  "kind": "StorageV2",
+  "largeFileSharesState": null,
+  "lastGeoFailoverTime": null,
+  "location": "eastus2",
+  "minimumTlsVersion": "TLS1_0",
+  "name": "mendozastg03416",
+  "networkRuleSet": {
+    "bypass": "AzureServices",
+    "defaultAction": "Allow",
+    "ipRules": [],
+    "ipv6Rules": [],
+    "resourceAccessRules": null,
+    "virtualNetworkRules": []
+  },
+  "primaryEndpoints": {
+    "blob": "https://mendozastg03416.blob.core.windows.net/",
+    "dfs": "https://mendozastg03416.dfs.core.windows.net/",
+    "file": "https://mendozastg03416.file.core.windows.net/",
+    "internetEndpoints": null,
+    "microsoftEndpoints": null,
+    "queue": "https://mendozastg03416.queue.core.windows.net/",
+    "table": "https://mendozastg03416.table.core.windows.net/",
+    "web": "https://mendozastg03416.z20.web.core.windows.net/"
+  },
+  "primaryLocation": "eastus2",
+  "privateEndpointConnections": [],
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": null,
+  "resourceGroup": "StorageRG",
+  "routingPreference": null,
+  "sasPolicy": null,
+  "secondaryEndpoints": null,
+  "secondaryLocation": "centralus",
+  "sku": {
+    "name": "Standard_GRS",
+    "tier": "Standard"
+  },
+  "statusOfPrimary": "available",
+  "statusOfSecondary": "available",
+  "storageAccountSkuConversionStatus": null,
+  "tags": {},
+  "type": "Microsoft.Storage/storageAccounts"
+}
+[19:10:42] Creating container: mycontainer
+{
+  "created": true
+}
+[19:10:44] Uploading testfile.txt
+{
+  "client_request_id": "895966e3-7ec2-11f0-bffd-080027aca49c",
+  "content_md5": "zq6SAwqm8Rk8rA+9L574Cg==",
+  "date": "2025-08-21T19:10:44+00:00",
+  "encryption_key_sha256": null,
+  "encryption_scope": null,
+  "etag": "\"0x8DDE0E66DF62769\"",
+  "lastModified": "2025-08-21T19:10:44+00:00",
+  "request_id": "f7a252bd-901e-0002-60cf-12db28000000",
+  "request_server_encrypted": true,
+  "version": "2022-11-02",
+  "version_id": null
+}
+[19:10:46] Redundancy reported by Azure: Standard_GRS
+[19:10:46] Downloading as recovered.txt
+{
+  "container": "mycontainer",
+  "content": "",
+  "contentMd5": null,
+  "deleted": false,
+  "encryptedMetadata": null,
+  "encryptionKeySha256": null,
+  "encryptionScope": null,
+  "hasLegalHold": null,
+  "hasVersionsOnly": null,
+  "immutabilityPolicy": {
+    "expiryTime": null,
+    "policyMode": null
+  },
+  "isAppendBlobSealed": null,
+  "isCurrentVersion": null,
+  "lastAccessedOn": null,
+  "metadata": {},
+  "name": "testfile.txt",
+  "objectReplicationDestinationPolicy": null,
+  "objectReplicationSourceProperties": [],
+  "properties": {
+    "appendBlobCommittedBlockCount": null,
+    "blobTier": null,
+    "blobTierChangeTime": null,
+    "blobTierInferred": null,
+    "blobType": "BlockBlob",
+    "contentLength": 45,
+    "contentRange": "bytes None-None/45",
+    "contentSettings": {
+      "cacheControl": null,
+      "contentDisposition": null,
+      "contentEncoding": null,
+      "contentLanguage": null,
+      "contentMd5": "zq6SAwqm8Rk8rA+9L574Cg==",
+      "contentType": "text/plain"
+    },
+    "copy": {
+      "completionTime": null,
+      "destinationSnapshot": null,
+      "id": null,
+      "incrementalCopy": null,
+      "progress": null,
+      "source": null,
+      "status": null,
+      "statusDescription": null
+    },
+    "creationTime": "2025-08-21T19:10:44+00:00",
+    "deletedTime": null,
+    "etag": "\"0x8DDE0E66DF62769\"",
+    "lastModified": "2025-08-21T19:10:44+00:00",
+    "lease": {
+      "duration": null,
+      "state": "available",
+      "status": "unlocked"
+    },
+    "pageBlobSequenceNumber": null,
+    "pageRanges": null,
+    "rehydrationStatus": null,
+    "remainingRetentionDays": null,
+    "serverEncrypted": true
+  },
+  "rehydratePriority": null,
+  "requestServerEncrypted": true,
+  "snapshot": null,
+  "tagCount": null,
+  "tags": null,
+  "versionId": null
+}
+[19:10:46] Recovered file contents:
+Day 11 replication test 2025-08-21T19:10:44Z
+STORAGE_ACCOUNT=mendozastg03416
+SKU=Standard_GRS
